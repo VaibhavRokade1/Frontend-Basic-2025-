@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex box</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .m-1 {
+        margin-top: 0.5rem;
+      }
+      .box .img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .box {
+        align-items: center;
+        width: 15rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        border: 2px solid gray;
+      }
+      .box:hover {
+        color: aliceblue;
+        background-color: rgb(153, 85, 217);
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .icons {
+        display: flex;
+        justify-content: space-evenly;
+      }         
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="img">
+          <img
+            src="https://imgs.search.brave.com/2Qo_Ec33ipxClZjYBbHWtMH6n5-r6QZkdy4lyeCtkxQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE3/MTY5ODA5MS9waG90/by9hLW1hbi1ob2xk/aW5nLWhpcy1kaWFy/eS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9WUdEQXdZVmFT/dzYwM3NDYnc4REEt/Q1NQeWZ3NW9oTEY2/SW1KdVRhUVhFVT0"
+            alt="..."
+          />
+        </div>
+        <h2 class="m-1">Vaibhav Rokade</h2>
+        <h4 class="m-1">Backend Developer</h4>
+        <div class="icons m-1">
+          <i class="bi bi-facebook"></i> <i class="bi bi-whatsapp"></i
+          ><i class="bi bi-twitter"></i><i class="bi bi-instagram"></i>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img
+            src="https://imgs.search.brave.com/2Qo_Ec33ipxClZjYBbHWtMH6n5-r6QZkdy4lyeCtkxQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE3/MTY5ODA5MS9waG90/by9hLW1hbi1ob2xk/aW5nLWhpcy1kaWFy/eS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9WUdEQXdZVmFT/dzYwM3NDYnc4REEt/Q1NQeWZ3NW9oTEY2/SW1KdVRhUVhFVT0"
+            alt="..."
+          />
+        </div>
+        <h2 class="m-1">Vikas Pathade</h2>
+        <h4 class="m-1">Backend Developer</h4>
+        <div class="icons m-1">
+          <i class="bi bi-facebook"></i> <i class="bi bi-whatsapp"></i
+          ><i class="bi bi-twitter"></i><i class="bi bi-instagram"></i>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img
+            src="https://imgs.search.brave.com/2Qo_Ec33ipxClZjYBbHWtMH6n5-r6QZkdy4lyeCtkxQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE3/MTY5ODA5MS9waG90/by9hLW1hbi1ob2xk/aW5nLWhpcy1kaWFy/eS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9WUdEQXdZVmFT/dzYwM3NDYnc4REEt/Q1NQeWZ3NW9oTEY2/SW1KdVRhUVhFVT0"
+            alt="..."
+          />
+        </div>
+        <h2 class="m-1">Aditya Fhtake</h2>
+        <h4 class="m-1">Backend Developer</h4>
+        <div class="icons m-1">
+          <i class="bi bi-facebook"></i> <i class="bi bi-whatsapp"></i
+          ><i class="bi bi-twitter"></i><i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

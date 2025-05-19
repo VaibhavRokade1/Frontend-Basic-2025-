@@ -29,8 +29,10 @@
       .box {
         height: 370px;
         width: 27%;
-        padding: 1rem;
+        color: #fff;
+        padding: 1.4rem;
         text-align: center;
+        padding-top: 3.5rem;
         border-radius: 1.5rem;
         display: block;
         background: #ffffff13;
@@ -38,37 +40,55 @@
         backdrop-filter: blur(16px);
         align-items: center;
       }
+      .box a {
+        color: #a2de17;
+      }
       .box h1 {
-        color: #80ad16;
+        color: #a2de17;
         font-size: xx-large;
       }
       .box input[type="submit"] {
-        background: #80ad16;
+        background: #a2de17;
+        color: #fff;
+        margin-top: 1rem;
+        font-weight: 500;
+
         font-size: medium;
-        
       }
-      .box input {
+      .box input[type="checkbox"] {
+        accent-color: #a2de17;
+        margin-top: 1rem;
+      }
+      .box input[type="email"],
+      input[type="password"],
+      input[type="submit"] {
+        color: #7e4614;
         width: 90%;
         margin-top: 1rem;
+        text-transform: capitalize;
         padding-left: 1rem;
         border-radius: 3rem;
         cursor: pointer;
-        border: #ffffff13;
+        border: #ffffff98;
         outline: none;
         height: 2.5rem;
       }
     </style>
   </head>
   <body>
-    <section class="first">
-      <div class="box">
-        <h1>Log in</h1>
-        <input type="email" placeholder="Enter a email" />
-        <br />
-        <input type="password" placeholder="Enter a Password" />
-        <br />
-        <input type="submit" value="Log in" />
-      </div>
-    </section>
+    <form action="">
+      <section class="first">
+        <div class="box">
+          <h1>Login Now</h1>
+          <input type="email" placeholder="Enter a Email" />
+          <br />
+          <input type="password" placeholder="Enter a Password" />
+          <br />
+          <input type="checkbox" required />
+          <span>I Remembar <a href="#">Privecy Policie</a></span>
+          <input type="submit" value="Log in" />
+        </div>
+      </section>
+    </form>
   </body>
 </html>
