@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form in css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, blue, #b850d2, red);
+      }
+
+      .main-box {
+        width: 70%;
+        height: 60%;
+        background: skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .formbox {
+        padding: 2rem;
+
+        width: 50%;
+        background-color: aliceblue;
+        h4 {
+          font-size: 1.5rem;
+          color: skyblue;
+        }
+      }
+      input {
+        width: 100%;
+        outline: none;
+        margin-top: 1rem;
+        padding: 0.5rem;
+      }
+      #btn {
+        background: skyblue;
+        border: none;
+        font-weight: 600;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-box">
+        <div class="formbox">
+          <h4>login to your Account</h4>
+          <div class="input">
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input">
+            <input type="password" placeholder="password" />
+          </div>
+          <div class="input">
+            <input type="submit" value="login" id="btn" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
