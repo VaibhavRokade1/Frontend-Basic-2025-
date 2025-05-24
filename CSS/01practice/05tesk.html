@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 05</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background: #ae05dd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mainBox {
+        width: 70%;
+        height: 70vh;
+        overflow: hidden;
+        border-radius: 5rem 0rem;
+        background: #fff;
+        display: flex;
+        /* justify-content: center; */
+      }
+      .box1 {
+        width: 50%;
+        height: 100%;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background: #000; */
+        h1 {
+          color: #9a47d9;
+        }
+      }
+      .box2 {
+        width: 50%;
+        height: 100%;
+        background: url("https://imgs.search.brave.com/Bkt4cCvcmIB7c4By-80LbD4h4DNBjlcspY_KcqW1mEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vV0tkZDVJ/YmlfajBRVVg2UGV1/Yi1EZEdfQ3luVWlM/OTNkSW54c2EwR21S/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlq/Wkc0dS9jR2w0WVdK/aGVTNWpiMjB2L2NH/aHZkRzh2TWpBeU15/OHcvTXk4eE5TOHlN/QzgwTmk5aS9ZV05y/WjNKdmRXNWtMVGM0/L05UVTBNVFJmTmpR/d0xtcHcvWnc");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      /* .inputbox {
+        display: flex;
+        align-items: center;
+      } */
+      .inputbox {
+        width: 100%;
+        border-bottom: 1px solid #c018c3;
+        border-radius: 5px;
+        padding: 0.3rem;
+        font-size: medium;
+        color: #000;
+        margin-top: 1rem;
+        input {
+          width: 100%;
+          outline: none;
+          color: #000;
+          border: none;
+          background: transparent;
+          padding: 0.5rem;
+        }
+        input::placeholder {
+          color: #000000;
+        }
+      }
+      .remember {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        /* margin: 2rem; */
+        div {
+          display: flex;
+          gap: 0.2rem;
+        }
+      }
+      .btn1 {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 4px;
+        color: #fff;
+        background: #9a47d9;
+        padding: 0.5rem;
+      }
+      .box2 {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        /* background: #9a47d9; */
+      }
+      .box21 {
+        background: #9a47d97d;
+        padding: 1rem;
+        color: white;
+        border-radius: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainBox">
+        <div class="box1">
+          <h1>Login</h1>
+          <div class="inputbox">
+            <i class="bi bi-person-fill"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="inputbox">
+            <i class="bi bi-lock-fill"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="remember">
+            <div>
+              <input type="checkbox" />
+              <p>Remember Me</p>
+            </div>
+            <a href="#">Forgaot Password</a>
+          </div>
+          <input type="submit" class="btn1" value="Sign up" />
+        </div>
+        <div class="box2">
+          <div class="box21">
+            <h1>Paragraph</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus accusantium repellendus adipisci veniam, nobis
+              dolorum. Voluptate, vel eos?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
